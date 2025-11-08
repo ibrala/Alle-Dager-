@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  min-height: 100%;
+  padding-top: 80px;
+  flex-direction: column;
+}
+
+header {
+  background-color: #295CC2;
+  color: #ffffff;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #E01F1F;
+}
+
+main {
+  flex: wrap;
+  padding: 120px 5%;
+}
+
+/* Home: Abdullah */
+.image-home {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+.background-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.center-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #E01F1F;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: none;
+}
+
+.button:hover {
+  background-color: #80AFFF;
+}
+
+/* utvalgte produkter: Ibrahim */
+.tilbud {
+  color:#E01F1F;
+  text-align: center;
+  font-size: 29px;
+  margin:60px 0 20px;
+}
+
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 80px 150px 150px;
+  margin-top: 0;
+}
+
+.produkt {
+  width: 180px;
+  max-width: 200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 10px;
+  border: 2px solid #E5E5E5;
+  transition: 0.3s;
+}
+.produkt:hover {
+  background-color: #E5E5E5;
+}
+
+.produkt a {
+  text-decoration: none;
+}
+
+.produktbilde {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.prodult h3 {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.pris {
+  color:#E01F1F;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* om oss: Roj */
+.om-oss-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.om {
+  flex: auto;
+  min-width: 250px;
+  max-width: 600px;
+}
+
+.om h2 {
+  color: #295CC2;
+  margin-bottom: 20px;
+}
+
+.om p {
+  margin-bottom: 10px;
+}
+
+.timer {
+  flex: auto;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.timer h2 {
+  color:#295CC2;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color:#80AFFF;
+  color: #ffffff;
+}
+
+/* finn butikken: Usman */
+.map-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+
+}
+
+.map-container h3 {
+  text-align: center;
+}
+.image-container {
+  flex: 20%;
+  max-width: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+/* vare: Murtada */
+.produkt-detalj {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: auto;
+}
+
+.produkt-bilde img {
+  width: 300px;
+  height: auto;
+}
+.produkt-info {
+  font-size: 16px;
+  color:#000000;
+  text-align: left;
+}
+
+.produkt-pris {
+  color:#E01F1F;
+  font-size: 24px;
+ margin: 15px 0;
+}
+
+.produkt-navn {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.produkt-type {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.produkt-allergi {
+  margin: 15px 0;
+}
+
+.produkt-tabell {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.produkt-tabell th, .produkt-tabell td {
+  color:#000000;
+  border:#000000 1px solid;
+  padding: 6px 10px;
+  text-align: left;
+  background-color: #E5E5E5;
+}
+
+/* Footer*/
+footer {
+  background-color: #295CC2 ;
+  color: #ffffff;
+  padding: 40px;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+footer div {
+  margin: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #E01F1F ;
+}
+
+
+/* tilpassing for mindre skjermer */
+@media (max-width: 600px) {
+  header, footer, .produkt-detalj, .map-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav a, .button, .center-content h2 {
+    font-size: 16px;
+    margin: 10px 0;
+  } 
+
+  main, .listings {
+    padding: 20px;
+  }
+
+  .produkt, .image-container, .map-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img, iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
